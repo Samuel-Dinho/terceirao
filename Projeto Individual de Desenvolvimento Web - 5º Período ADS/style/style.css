@@ -1,0 +1,101 @@
+/*Sustentabilidade e Consciência Ambiental
+● Paleta de Cores:
+○ Verde Escuro (#2e7d32) – Representa a natureza e sustentabilidade.
+○ Verde Claro (#81c784) – Para elementos interativos.
+○ Marrom (#795548) – Para dar um tom orgânico e natural.
+○ Branco (#ffffff) – Para melhor leitura e contraste.
+*/
+body {
+    
+    font-family: Arial, sans-serif;
+    background-image: url("../image/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center; /* Alinhamento centralizado */
+  }
+  
+  .col-12, .col-md-8, .col-lg-4 {
+    padding: 20px;
+    background-color: #f4f4f4; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #2e7d32; 
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #795548;
+  }
+  
+  .form-control {
+    border: 1px solid #81c784; 
+  }
+  
+  .form-control:focus {
+    border-color: #2e7d32; 
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
+  }
+  
+  .btn-primary {
+    background-color: #81c784; 
+    border-color: #81c784;
+  }
+  
+  .btn-primary:hover {
+    background-color: #66bb6a; 
+    border-color: #66bb6a;
+  }
+  
+  .form-check-label {
+    font-size: 14px;
+    color: #795548;
+  }
+  
+  #error-message {
+    background-color: rgba(168, 47, 47, 0.726);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  #sucess-message {
+    background-color: #81c784;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .col-12 {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-control {
+      font-size: 1rem;
+    }
+  
+    .btn-primary {
+      width: 100%; /* Botão vai ocupar toda a largura */
+    }
+  }
+  
