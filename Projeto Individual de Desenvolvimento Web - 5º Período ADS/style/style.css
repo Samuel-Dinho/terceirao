@@ -5,7 +5,7 @@
 ○ Marrom (#795548) – Para dar um tom orgânico e natural.
 ○ Branco (#ffffff) – Para melhor leitura e contraste.
 */
-body {
+  body {
     
     font-family: Arial, sans-serif;
     background-image: url("../image/login.jpg");
@@ -98,4 +98,5 @@ body {
       width: 100%; /* Botão vai ocupar toda a largura */
     }
   }
-  
+
+
