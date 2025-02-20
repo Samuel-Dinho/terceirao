@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../js/like.js"></script>
+</head>
+
+<body>
+    <style>
+        #nav .nav-link {
+            /*border-style: solid;*/
+            background-color: #81c784;
+            border-radius: 10px;
+            margin: 10px 5px;
+            padding: 10px;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        #nav {
+            background-color: #795548af;
+            padding: 2rem;
+            background-image: url("../image/celular-recliclagem.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        #nav i {
+            font-size: 1.3rem;
+        }
+
+        #nav h2 {
+            margin: auto;
+            text-align: center;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 3rem;
+        }
+
+        #nav a:hover {
+            background-color: #2e7d32;
+        }
+
+        #main {
+            background-color: #81c78462;
+            background-image: url("../image/pexels-gabby-k-7412043.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container p {
+            text-align: justify;
+            text-decoration: wavy;
+            text-indent: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .container h2 {
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-position: center;
+            object-fit: cover;
+            margin-top: 3px;
+        }
+
+        .card-body {
+            padding: 15px;
+
+        }
+
+        #buttonLike {
+            border: none;
+            background: none;
+            color: #ffffff;
+        }
+
+        #iconLike {
+            margin: 10px;
+            color: #ffffff;
+
+        }
+        .card-body{
+            background-color: #ffffff;
+        }
+        #card{
+            background-color: #795548bb;
+        }
+        #infos{
+            color: #ffffff;
+        }
+        .container h5  {
+            font-size: 1.5rem;
+            margin: 10px;
+            text-indent: 30px;
+        }
+        .container h3{
+            font-size: 1.8rem;
+        }
+        .pagination{
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            justify-content: center;
+            
+        }
+        .page-link{
+            background-color: #795548;
+            color: #ffffff;
+        }
+    </style>
+    <main id="main" role="main">
+        <ul id="nav" class="nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false"><i class="bi bi-list"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="artigos.html">Artigos</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../index.html">home</a></li>
+                </ul>
+            </li>
+            <h2>Sustentabilidade e Consciência Ambiental</h2>
+        </ul>
+        <section id='title' class="jumbotron text-center">
+            <div class="container">
+
+            </div>
+        </section>
+        
+        <div class="album py-5">
+            <div class="container">
+                <div class="row">
+                    <h2 id="1"></h2>
+                    <div id="card" class="card mb-2 card-custom">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../image/lixo_eletronico.jpg" class="d-block w-100 card-img-top"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../image/lixo_celular.jpg" class="d-block w-100 card-img-top" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../image/coleta_lixo_eletronico.jpg" class="d-block w-100 card-img-top"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">O que é lixo eletrônico?</h5>
+                            <p class="card-text">Lixo eletrônico, também conhecido como e-lixo ou resíduo eletrônico,
+                                refere-se a todos os dispositivos eletrônicos descartados, como celulares, computadores,
+                                TVs, eletrodomésticos, entre outros. Esses aparelhos contêm materiais tóxicos, como
+                                mercúrio, chumbo, cádmio e outros metais pesados, além de componentes plásticos não
+                                biodegradáveis. O descarte inadequado desses resíduos pode ter consequências graves para
+                                o meio ambiente e para a saúde humana.</p>
+
+
+                            <h5 class="card-title">O crescimento do lixo eletrônico</h5>
+                            <p>Com o rápido avanço tecnológico e a obsolescência programada, a quantidade de lixo
+                                eletrônico gerada está em constante aumento. Estima-se que cerca de 50 milhões de
+                                toneladas de lixo eletrônico sejam produzidas globalmente anualmente. Esse número tende
+                                a crescer ainda mais, pois a demanda por dispositivos eletrônicos continua em ascensão
+                                nos países emergentes.</p>
+                            <h3>Impactos ambientais do lixo eletrônico</h3>
+                            <hr>
+                            <h5>Poluição do solo e da água</h5>
+                            <p>Quando o lixo eletrônico é descartado inadequadamente, ocorre a liberação de substâncias
+                                químicas nocivas no solo e na água. Esses produtos químicos contaminam o solo, atingem
+                                os lençóis freáticos e podem chegar aos cursos d’água, comprometendo a qualidade e a
+                                disponibilidade de água potável. Além disso, a contaminação do solo afeta a agricultura
+                                e a segurança alimentar.</p>
+                            <h5>Riscos para a saúde humana</h5>
+                            <p>Os metais pesados presentes no lixo eletrônico representam um risco significativo para a
+                                saúde humana. A exposição a essas substâncias pode causar danos neurológicos, problemas
+                                respiratórios, distúrbios hormonais e até câncer. Isso afeta não apenas os trabalhadores
+                                envolvidos no processamento inadequado desses resíduos, mas também as comunidades
+                                próximas a áreas de descarte inadequado.</p>
+                            <h5>A importância da reciclagem de lixo eletrônico</h5>
+                            <p>Reciclar o lixo eletrônico é essencial para minimizar seu impacto negativo no meio
+                                ambiente e na saúde pública. A reciclagem adequada desses dispositivos permite a
+                                recuperação de metais valiosos, como ouro, prata e cobre, reduzindo a necessidade de
+                                mineração desses recursos. Além disso, a reciclagem evita a contaminação do solo e da
+                                água, ajudando a preservar ecossistemas naturais.</p>
+                            <h5>A necessidade de conscientização e regulamentações</h5>
+                            <p>Para enfrentar efetivamente o problema do lixo eletrônico, é necessário conscientizar a
+                                população sobre a importância da reciclagem adequada e dos perigos associados à sua
+                                disposição inadequada. Além disso, é fundamental implementar regulamentações mais
+                                rigorosas para garantir que empresas e consumidores ajam de forma responsável ao
+                                descartar dispositivos eletrônicos.</p>
+                            <h5>Alternativas sustentáveis</h5>
+                            <p>Além da reciclagem, outras abordagens sustentáveis podem ser adotadas para reduzir o lixo
+                                eletrônico. Aumentar a durabilidade dos produtos eletrônicos, promover a reutilização de
+                                dispositivos funcionais e desenvolver tecnologias mais sustentáveis são medidas que
+                                contribuem para a redução desse problema.</p>
+                            <h5>Descarte adequado com a Sete Ambiental</h5>
+                            <p>Uma das maneiras mais eficientes de lidar com esse desafio é contar com empresas
+                                especializadas no gerenciamento de resíduos eletrônicos, como a Sete Ambiental. A Sete
+                                Ambiental é uma referência nesse setor, oferecendo serviços de coleta, desmontagem,
+                                reciclagem e destinação adequada de resíduos eletrônicos.
+
+                                Ao optar por trabalhar com a Sete Ambiental, você garante que seus resíduos eletrônicos
+                                sejam tratados de acordo com as melhores práticas ambientais e de segurança. Possuímos
+                                tecnologia de ponta e uma equipe qualificada, dedicada a garantir que o descarte de
+                                resíduos eletrônicos seja feito adequadamente, em conformidade com todas as
+                                regulamentações ambientais e legislações aplicáveis.
+
+                                A Sete Ambiental oferece soluções personalizadas para empresas de diversos setores,
+                                atendendo às suas necessidades específicas de gerenciamento de resíduos eletrônicos.
+                                Seja para a coleta de grandes volumes de equipamentos obsoletos, a desmontagem de
+                                componentes ou a recuperação de materiais valiosos, a empresa possui as capacidades e
+                                conhecimentos necessários para executar essas atividades com eficiência e
+                                responsabilidade.
+
+                                Além disso, ao optar por trabalhar com a Sete Ambiental, você contribui diretamente para
+                                a preservação do meio ambiente e a promoção da economia circular. A empresa se dedica à
+                                recuperação de materiais valiosos presentes nos resíduos eletrônicos, como metais
+                                preciosos e outros componentes reutilizáveis, reduzindo assim a necessidade de extração
+                                de recursos naturais.</p>
+
+                        </div>
+                        <div id="infos" onclick="like()">
+                            <button id="buttonLike" ><i id="iconLike" class="fas fa-thumbs-up" > </i><span
+                                    id="like">0</span></button>
+                            <small class="">Last updated 3 mins ago</small>
+                            <small class=""><p>Para mais informações sobre os impactos ambientais do lixo eletrônico, veja o artigo da <a href="https://www.seteambiental.com.br/lixo-eletronico-impacto-ambiental-e-solucoes-sustentaveis/" target="_blank">Sete Ambiental</a>.</p>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="artigo1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="artigo2.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="artigo3.html">3</a></li>
+              </ul>
+        </div>
+        
+    </main>
+    
+</body>
+
+</html>
