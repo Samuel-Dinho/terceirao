@@ -21,8 +21,8 @@
   }
   #nav{
     background-color: #795548af;
-    padding: 2rem;
-    background-image: url("image/login.jpg");
+    padding: 1rem;
+    /*background-image: url("image/login.jpg");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -44,11 +44,19 @@
   
     #title p {
         margin-top: 15px;
-        color: #795548;
-        margin-left: 50%;
-        text-align: justify;
+        color: #ffffff;
+        width: 50%;
+        margin: 10px auto;
+        text-align: center;
         text-decoration: wavy;
         text-indent: 20px;
+    }
+    #title span a{
+      text-align: right;
+      text-decoration: none;
+      color: #ffffff;
+    width: 15%;
+    margin: auto;
     }
     
     #main{
@@ -62,7 +70,9 @@
         text-align: justify;
         text-decoration: wavy;
         text-indent: 20px;
+        color: #795548af;
     }
+    
     </style>
     <main id="main" role="main">
         <ul id="nav" class="nav" >
@@ -72,7 +82,7 @@
                   <li><a class="dropdown-item" href="pages/login.html">Login</a></li>
                   <li><a class="dropdown-item" href="pages/artigo1.html">Artigos</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">home</a></li>
+                  <li><a class="dropdown-item" href="index.html">home</a></li>
                 </ul>
               </li>
             <h2>Sustentabilidade e Consciência Ambiental</h2>
@@ -80,7 +90,9 @@
         <section id='title' class="jumbotron text-center">
           <div class="container">
             
-            <p class="jumbotron-heading">A consciência ambiental refere-se à consciência e compreensão da importância e interdependência entre os seres humanos e o meio ambiente.</p>
+            <p class="jumbotron-heading">A consciência ambiental refere-se à consciência e compreensão da importância e interdependência entre os seres humanos e o meio ambiente. </p>
+            <span><a href="https://www.ecycle.com.br/consciencia-ambiental-2/">ecycle.com.br</a></span>
+            
           </div>
         </section>
   
@@ -99,42 +111,46 @@
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary"><a href="pages/artigo1.html#1">Ver</a></button>
                       </div>
+                      <small class="text-muted">Ultima atualização 130 mins atras</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="" alt="Thumbnail [100%x225]" src="image/comingsoon.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur ipsum itaque, et, eum voluptatem atque ea ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="pages/artigo1.html#1">Ver</a></button>
+                      </div>
+                      <small class="text-muted">Ultima atualização 60 mins atras</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <img class="card-img-top" data-src="" alt="Thumbnail [100%x225]" src="image/comingsoon.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam consequuntur ipsum itaque, et, eum voluptatem atque ea ...</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="pages/artigo1.html#1">Ver</a></button>
+                      </div>
                       <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" data-src="" alt="Thumbnail [100%x225]" src="image/pexels-photo-1230157.jpeg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="pages/artigo2.html#2">Ver</a></button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top" data-src="" alt="Thumbnail [100%x225]" src="image/pexels-wyxina-tresse-311038210-30563608.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="pages/artigo3.html#3">Ver</a></button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                      </div>
-                      <small class="text-muted">9 mins</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
             </div>
           </div>
         </div>

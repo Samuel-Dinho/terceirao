@@ -32,8 +32,7 @@
 
         #nav {
             background-color: #795548af;
-            padding: 2rem;
-            background-image: url("../image/celular-recliclagem.jpeg");
+            padding: 1rem;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -96,8 +95,9 @@
         }
 
         #iconLike {
-            margin: 10px;
             color: #ffffff;
+            padding: 0;
+            margin-top: 10px;
 
         }
         .card-body{
@@ -136,7 +136,7 @@
                     aria-expanded="false"><i class="bi bi-list"></i></a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="login.html">Login</a></li>
-                    <li><a class="dropdown-item" href="artigos.html">Artigos</a></li>
+                    <li><a class="dropdown-item" href="artigo1.html">Artigos</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
@@ -254,9 +254,9 @@
                                 de recursos naturais.</p>
 
                         </div>
-                        <div id="infos" onclick="like()">
-                            <button id="buttonLike" ><i id="iconLike" class="fas fa-thumbs-up" > </i><span
-                                    id="like">0</span></button>
+                        <div id="infos" >
+                            <button id="buttonLike" onclick="like()"><i id="iconLike" class="fas fa-thumbs-up" ></i></button>
+                            <span id="like">0</span>
                             <small class="">Last updated 3 mins ago</small>
                             <small class=""><p>Para mais informações sobre os impactos ambientais do lixo eletrônico, veja o artigo da <a href="https://www.seteambiental.com.br/lixo-eletronico-impacto-ambiental-e-solucoes-sustentaveis/" target="_blank">Sete Ambiental</a>.</p>
                             </small>
@@ -264,15 +264,11 @@
                     </div>
                 </div>
             </div>
-            <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="artigo1.html">1</a></li>
-                <li class="page-item"><a class="page-link" href="artigo2.html">2</a></li>
-                <li class="page-item"><a class="page-link" href="artigo3.html">3</a></li>
-              </ul>
+            
         </div>
         
     </main>
-    
+
 </body>
 
 </html>

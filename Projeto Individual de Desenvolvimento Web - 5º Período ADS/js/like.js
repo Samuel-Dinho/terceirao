@@ -6,9 +6,10 @@ function like() {
     if (icon.style.color === 'blue') {
         icon.style.color = '#ffff';                 
         likes = likes - 1;                         
+    }else{
         icon.style.color = 'blue';                  
-        likes = likes + 1;                          
+        likes = likes + 1;      
+    }                        
     likeL.innerHTML = likes;                       
 }
 
-}

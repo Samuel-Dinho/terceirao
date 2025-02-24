@@ -12,7 +12,7 @@ $(document).ready(function() {
             $('#error-message').text('Usuário e senha são obrigatórios!').show();
             setTimeout(() =>{
                 $('#error-message').hide();
-            }, 3000);
+            }, 2000);
             
         }else{
             if(email === login & password === senha){
@@ -20,7 +20,7 @@ $(document).ready(function() {
             setTimeout(() => {
                 $('#sucess').hide();
                 window.location.href = "../index.html";
-            }, 3000);
+            }, 2000);
             }
         }        
     });
