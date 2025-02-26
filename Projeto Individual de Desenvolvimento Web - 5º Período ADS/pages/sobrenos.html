@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/cadastro.js"></script>
+    <script src="../js/like.js"></script>
+</head>
+
+<body>
+    <style>
+        #nav .nav-link {
+            /*border-style: solid;*/
+            background-color: #81c784;
+            border-radius: 10px;
+            margin: 10px 5px;
+            padding: 10px;
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        #nav {
+            background-color: #795548af;
+            padding: 1rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+
+        #nav i {
+            font-size: 1.3rem;
+        }
+
+        #nav h2 {
+            margin: auto;
+            text-align: center;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 3rem;
+        }
+
+        #nav a:hover {
+            background-color: #2e7d32;
+        }
+
+        #main {
+            background-color: #81c78462;
+            background-image: url("../image/pexels-gabby-k-7412043.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container p {
+            text-align: justify;
+            text-decoration: wavy;
+            text-indent: 20px;
+            width: 90%;
+            margin: auto;
+        }
+
+        .container h2 {
+            color: #ffffff;
+            font-family: sans-serif;
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-position: center;
+            object-fit: cover;
+            margin-top: 3px;
+        }
+
+        .card-body {
+            padding: 15px;
+
+        }
+
+        #buttonLike {
+            border: none;
+            background: none;
+            color: #ffffff;
+        }
+
+        #iconLike {
+            color: #ffffff;
+            padding: 0;
+            margin-top: 10px;
+
+        }
+
+        .card-body {
+            background-color: #ffffff;
+        }
+
+        #card {
+            background-color: #795548bb;
+        }
+
+        #infos {
+            color: #ffffff;
+        }
+
+        .container h5 {
+            font-size: 1.5rem;
+            margin: 10px;
+            text-indent: 30px;
+        }
+
+        .container h3 {
+            font-size: 1.8rem;
+        }
+
+        .pagination {
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            justify-content: center;
+
+        }
+
+        .page-link {
+            background-color: #795548;
+            color: #ffffff;
+        }
+
+        .div4 {
+            text-align: center;
+            margin: auto;
+
+            border-radius: 2%;
+        }
+
+        .div4 h1 {
+            padding: 15px;
+        }
+
+        .div4 #paragrafos {
+            background-color: #ffffff;
+            margin: 10px auto;
+            border-radius: 20px;
+            max-width: 80%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.0,5rem;
+            color: #795548;
+        }
+        #infos a{
+            display: flex;
+            justify-content: space-between; /* Isso vai espalhar os itens ao longo da linha */
+            align-items: center;
+        }
+      
+    </style>
+    <main id="main" role="main">
+        <ul id="nav" class="nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i
+                  class="bi bi-list"></i></a>
+              <ul class="dropdown-menu" id="infos">
+                <li id="entrar">
+                  <a class="dropdown-item" href="login.html">Entrar<i class="bi bi-box-arrow-in-right"></i></a>
+                </li>
+                <li id='criar'>
+                  <a class="dropdown-item" href="cadastro.html">Criar Conta<i class="bi bi-person-add"></i></i></a>
+                </li>
+                <li><a class="dropdown-item" href="artigo1.html">Artigos<i class="bi bi-newspaper"></i></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="../index.html">Home<i class="bi bi-house-door"></i></a></li>
+                <li><a class="dropdown-item" href="sobrenos.html">Sobre<i class="bi bi-person-circle"></i></a></li>
+                <li><a class="dropdown-item" id="sair" href="#">Sair<i class="bi bi-box-arrow-left"></i></a></li>
+              </ul>
+            </li>
+            <h2>Sustentabilidade e Consciência Ambiental</h2>
+          </ul>
+        <div class="album py-5">
+            <div class="container">
+
+
+                <div class="parent">
+                    <div class="div4">
+                        <div id="paragrafos">
+                            <h1>Sobre Nós</h1>
+                            <p>Bem-vindo ao <strong>Gerenciamento de Residuos</strong>, sua fonte confiável para tudo
+                                relacionado ao gerenciamento de
+                                resíduos. Nosso site é dedicado a compartilhar informações, notícias e soluções
+                                inovadoras sobre
+                                o manejo responsável e sustentável dos resíduos.
+                                Criamos este espaço com o objetivo de educar,
+                                informar e inspirar empresas, comunidades e indivíduos a adotarem práticas mais
+                                conscientes e
+                                eficientes, contribuindo para a preservação do meio ambiente e a construção de um futuro
+                                mais
+                                sustentável.</p>
+                        </div>
+                        <div id="paragrafos">
+                        <h3>O que fazemos</h3>
+
+                        <p> No <strong>Gerenciamento de Residuos</strong>,nosso compromisso é fornecer conteúdo relevante e atualizado sobre as
+                            melhores práticas de gestão de resíduos. Publicamos artigos, estudos de caso, guias e
+                            novidades
+                            sobre reciclagem, compostagem, economia circular, inovações tecnológicas e regulamentações
+                            ambientais. Nosso objetivo é criar um ambiente onde todos possam aprender mais sobre o
+                            impacto
+                            dos resíduos no planeta e como podemos reduzir, reutilizar e reciclar de maneira eficiente.
+                        </p>
+                        </div>
+                        <div id="paragrafos">
+                            <h3>Por que seguimos essa missão</h3>
+
+                            <p>Acreditamos que, ao disseminar conhecimento sobre o gerenciamento adequado de resíduos,
+                                podemos
+                                impactar positivamente o comportamento de empresas e pessoas em relação ao meio
+                                ambiente. Nosso
+                                trabalho é essencial para promover a conscientização sobre a importância da destinação
+                                correta
+                                dos resíduos e como práticas simples podem ter um grande impacto na redução da poluição
+                                e no uso
+                                sustentável dos recursos naturais.</p>
+                        </div>
+                        <div id="paragrafos">
+                            <h3>O que você pode esperar</h3>
+
+                            <p>Conteúdo Atualizado: Notícias sobre novas tecnologias, regulamentações e soluções
+                                inovadoras no
+                                setor de resíduos.
+                                Guias e Dicas Práticas: Artigos educativos sobre como implementar a gestão de resíduos
+                                de forma
+                                eficiente em diferentes contextos.
+                                Estudos de Caso: Exemplos reais de empresas e iniciativas bem-sucedidas na área de
+                                gestão de
+                                resíduos.
+                                Infográficos e Recursos Visuais: Materiais visuais que facilitam a compreensão de
+                                conceitos e
+                                práticas importantes.
+                            </p>
+
+                            <p>
+                                Temos o compromisso de ser uma referência na disseminação de informações sobre o
+                                gerenciamento de resíduos. Ao juntar conhecimento, inovação e práticas sustentáveis,
+                                buscamos
+                                empoderar nossos leitores a fazerem escolhas mais conscientes e a implementar soluções
+                                mais
+                                verdes no seu dia a dia e nos seus negócios. Junte-se a nós e faça parte dessa mudança
+                                rumo a um
+                                futuro mais sustentável e responsável.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </main>
+
+</body>
+
+</html>

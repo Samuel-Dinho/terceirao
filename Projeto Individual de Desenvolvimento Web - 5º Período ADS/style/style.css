@@ -18,6 +18,12 @@
   .container {
     margin-top: 50px;
   }
+  .container h2{
+    font-size: 25px;
+    margin: 10px auto;
+    padding: 20px;
+    color: #795548;
+  }
   
   .row {
     display: flex;
@@ -66,7 +72,7 @@
     color: #795548;
   }
   #loginForm .btn{
-    background-color: #5cb960;
+    background-color: #795548;
 
     text-align: center;
     border: none;
@@ -75,7 +81,7 @@
     display: block;
   }
   #loginForm .btn:hover{
-    background-color: #2e7d32;
+    background-color:  #795548b0;
   }
   
   #error-message {
@@ -103,7 +109,7 @@
     }
   
     h2 {
-      font-size: 1.5rem;
+      font-size: 3.5rem;
     }
   
     .form-control {
@@ -113,6 +119,20 @@
     .btn-primary {
       width: 100%; /* Botão vai ocupar toda a largura */
     }
+    .container h2{
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 400px) {
+    .col-12 {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 0.3rem;
+    }
+  
+   
   }
 
 

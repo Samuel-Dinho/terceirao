@@ -20,6 +20,7 @@ $(document).ready(function() {
             setTimeout(() => {
                 $('#sucess').hide();
                 window.location.href = "../index.html";
+                localStorage.setItem("login", email);
             }, 2000);
             }
         }        
