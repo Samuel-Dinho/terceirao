@@ -1,46 +1,274 @@
-<form>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../js/cadastro.js"></script>
+</head>
+<body>
+  <style>
+    #nav .nav-link {
+      /*border-style: solid;*/
+      background-color: #81c784;
+      border-radius: 10px;
+      margin: 10px 5px;
+      padding: 10px;
+      color: #ffffff;
+      font-family: sans-serif;
+    }
+
+    #nav {
+      background-color: #795548af;
+      padding: 1rem;
+      /*background-image: url("image/login.jpg");*/
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+    }
+
+    #nav i {
+      font-size: 1.3rem;
+    }
+
+    #nav h2 {
+      margin: auto;
+      text-align: center;
+      color: #ffffff;
+      font-family: sans-serif;
+    }
+
+    #nav a:hover {
+      background-color: #2e7d32;
+    }
+
+    #title p {
+      margin-top: 15px;
+      color: #ffffff;
+      width: 50%;
+      margin: 10px auto;
+      text-align: center;
+      text-decoration: wavy;
+      text-indent: 20px;
+    }
+
+    #title span a {
+      text-align: right;
+      text-decoration: none;
+      color: #ffffff;
+      width: 15%;
+      margin: auto;
+    }
+
+    #main {
+      background-color: #81c78462;
+      background-image: url("image/pexels-gabby-k-7412043.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container p {
+      text-align: justify;
+      text-decoration: wavy;
+      text-indent: 20px;
+      color: #795548af;
+    }
+
+    #infos a {
+      display: flex;
+      justify-content: space-between;
+      /* Isso vai espalhar os itens ao longo da linha */
+      align-items: center;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+      display: block;
+    margin: 10px auto;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      color: #333;
+      margin: auto;
+    }
+
+    .form-control:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .form-row {
+      margin-bottom: 15px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .form-check-label {
+      font-size: 14px;
+    }
+
+    .form-check-input {
+      margin-top: 6px;
+    }
+    #password ,#nome , #endereco{
+      display: flex;
+      justify-content: space-around;
+    }
+    #email{
+      margin: 0 20px;
+    }
+
+    @media (max-width: 500px) {
+      h2 {
+        font-size: 25px;
+      }
+      #title p {
+          width: 100%;
+        }
+    }
+    @media (min-width: 600px) {
+        h2 {
+          font-size: 50px;
+        }
+      }
+      
+  </style>
+ <main id="main" role="main" >
+
+    <ul id="nav" class="nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          <i class="bi bi-list"></i>
+        </a>
+        <ul class="dropdown-menu" id="infos">
+          <li id="entrar">
+            <a class="dropdown-item" href="login.html">Entrar<i class="bi bi-box-arrow-in-right"></i></a>
+          </li>
+          <li id='criar'>
+            <a class="dropdown-item" href="cadastro.html">Criar Conta<i class="bi bi-person-add"></i></i></a>
+          </li>
+          <li><a class="dropdown-item" href="artigo1.html">Artigos<i class="bi bi-newspaper"></i></a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="index.html">Home<i class="bi bi-house-door"></i></a></li>
+          <li><a class="dropdown-item" href="sobrenos.html">Sobre<i class="bi bi-person-circle"></i></a></li>
+          <li><a class="dropdown-item" id="sair" href="#">Sair<i class="bi bi-box-arrow-left"></i></a></li>
+        </ul>
+      </li>
+
+      <h2 class="text-center">Sustentabilidade e Consciência Ambiental</h2>
+    </ul>
+    <div ><span id="menssage"></span></div>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-4 col-md-8" id="email">
+          <label for="inputEmail4">E-mail</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        </div>
+        <div class="form-row" id="nome">
+          <div class="form-group col-md-5">
+            <label for="inputNome">Nome:</label>
+            <input type="text" class="form-control" id="inputnome" placeholder="Nome">
+          </div>
+          <div class="form-group col-md-5">
+            <label for="inputSobrenome">Sobrenome</label>
+            <input type="text" class="form-control" id="inputsobrenome" placeholder="Sobrenome">
+          </div>
+        </div>
+        
+        <div class="form-row" id="password">
+          <div class="form-group col-md-5">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+          <div class="form-group col-md-5">
+            <label for="inputPasswordconfirm">Confirma Password</label>
+            <input type="password" class="form-control" id="inputPasswordconfirm" placeholder="Confirmar Password">
+          </div>
+        </div>
+        
+        
+      <div class="form-group" id="endereco">
+        <div class="form-group col-md-4">
+          <label for="inputZip">CEP</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="form-group col-md-6">
+        <label for="inputAddress">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
       </div>
-      <div class="form-group col-md-6">
-        <label for="inputPassword4">Senha</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+      <div class="form-row" id="endereco">
+        <div class="form-group col-md-6">
+          <label for="inputCity">Cidade</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">Estado</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>...</option>
+          </select>
+        </div>
+        
       </div>
-    </div>
-    <div class="form-group">
-      <label for="inputAddress">Endereço</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-    </div>
-    <div class="form-group">
-      <label for="inputAddress2">Endereço 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-    </div>
-    <div class="form-row">
-      <div class="form-group col-md-6">
-        <label for="inputCity">Cidade</label>
-        <input type="text" class="form-control" id="inputCity">
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            aceite os termos
+          </label>
+        </div>
       </div>
-      <div class="form-group col-md-4">
-        <label for="inputEstado">Estado</label>
-        <select id="inputEstado" class="form-control">
-          <option selected>Escolher...</option>
-          <option>...</option>
-        </select>
-      </div>
-      <div class="form-group col-md-2">
-        <label for="inputCEP">CEP</label>
-        <input type="text" class="form-control" id="inputCEP">
-      </div>
-    </div>
-    <div class="form-group">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="gridCheck">
-        <label class="form-check-label" for="gridCheck">
-          Clique em mim
-        </label>
-      </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Entrar</button>
-  </form>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+    
+  
+</main>
+
+
+</body>
+</html>
+

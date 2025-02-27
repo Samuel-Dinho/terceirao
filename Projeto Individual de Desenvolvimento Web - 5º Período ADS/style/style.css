@@ -84,7 +84,7 @@
     background-color:  #795548b0;
   }
   
-  #error-message {
+  #error {
     background-color: rgba(168, 47, 47, 0.726);
     color: white;
     text-align: center;
@@ -100,6 +100,15 @@
     margin-top: 10px;
     margin: auto;
 
+  }
+  #check a{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #795548;
+    text-align: center;
+    display: block;
+    margin-top: 0px;
+    
   }
   
   /* Responsividade */
