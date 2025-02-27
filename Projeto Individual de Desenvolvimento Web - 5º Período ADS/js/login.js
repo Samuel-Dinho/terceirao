@@ -7,7 +7,8 @@ $(document).ready(function() {
 
         email = $('#InputEmail1').val();
         password = $('#InputPassword1').val();
-
+        logincriado = localStorage.getItem("criadalogin");
+        senhacriada = localStorage.getItem("criadasenha");
         
         if (email === "" || password === "") {
             $('#error').text('Usuário e senha são obrigatórios!').show();
@@ -16,7 +17,7 @@ $(document).ready(function() {
             }, 2000);
             
         }else{
-            if(email === login & password === senha){
+            if(email === login & password === senha || email == logincriado && password == senhacriada){
                 $('#sucess').text('Login bem sucedido!').show();
             setTimeout(() => {
                 $('#sucess').hide();
