@@ -13,7 +13,8 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="../js/like.js"></script>
     <script src="../js/cadastro.js"></script>
     <script src="../js/sair.js"></script>
@@ -63,8 +64,17 @@
             background-image: url("../image/pexels-gabby-k-7412043.jpg");
             background-repeat: no-repeat;
             background-size: cover;
+            /* Faz a imagem preencher toda a tela */
             background-position: center;
+            width: 100vw;
+            /* Faz a largura cobrir toda a tela */
+            height: 100vh;
+            /* Faz a altura cobrir toda a tela */
+
+            align-items: center;
+            justify-content: center;
         }
+
 
         .container p {
             text-align: justify;
@@ -103,72 +113,82 @@
             margin-top: 10px;
 
         }
-        .card-body{
+
+        .card-body {
             background-color: #ffffff;
         }
-        #card{
+
+        #card {
             background-color: #795548bb;
         }
-        #infos{
+
+        #infos {
             color: #ffffff;
         }
-        .container h5  {
+
+        .container h5 {
             font-size: 1.5rem;
             margin: 10px;
             text-indent: 30px;
         }
-        .container h3{
+
+        .container h3 {
             font-size: 1.8rem;
         }
-        .pagination{
+
+        .pagination {
             display: flex;
             padding-left: 0;
             list-style: none;
             justify-content: center;
-            
+
         }
-        .page-link{
+
+        .page-link {
             background-color: #795548;
             color: #ffffff;
 
-        }   #infos a{
+        }
+
+        #infos a {
             display: flex;
-            justify-content: space-between; /* Isso vai espalhar os itens ao longo da linha */
+            justify-content: space-between;
+            /* Isso vai espalhar os itens ao longo da linha */
             align-items: center;
             font-size: 15px;
         }
-      
     </style>
     <main id="main" role="main">
         <ul id="nav" class="nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i
-                  class="bi bi-list"></i></a>
-              <ul class="dropdown-menu" id="infos">
-                <li id="entrar">
-                  <a class="dropdown-item" href="login.html">Entrar<i class="bi bi-box-arrow-in-right"></i></a>
-                </li>
-                <li id='criar'>
-                  <a class="dropdown-item" href="cadastro.html">Criar Conta<i class="bi bi-person-add"></i></i></a>
-                </li>
-                <li><a class="dropdown-item" href="artigo1.html">Artigos<i class="bi bi-newspaper"></i></a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="../index.html">Home<i class="bi bi-house-door"></i></a></li>
-                <li><a class="dropdown-item" href="sobrenos.html">Sobre<i class="bi bi-person-circle"></i></a></li>
-                <li><a class="dropdown-item" id="sair" href="#">Sair<i class="bi bi-box-arrow-left"></i></a></li>
-              </ul>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-expanded="false"><i class="bi bi-list"></i></a>
+                <ul class="dropdown-menu" id="infos">
+                    <li id="entrar">
+                        <a class="dropdown-item" href="login.html">Entrar<i class="bi bi-box-arrow-in-right"></i></a>
+                    </li>
+                    <li id='criar'>
+                        <a class="dropdown-item" href="cadastro.html">Criar Conta<i
+                                class="bi bi-person-add"></i></i></a>
+                    </li>
+                    <li><a class="dropdown-item" href="artigo1.html">Artigos<i class="bi bi-newspaper"></i></a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="../index.html">Home<i class="bi bi-house-door"></i></a></li>
+                    <li><a class="dropdown-item" href="sobrenos.html">Sobre<i class="bi bi-person-circle"></i></a></li>
+                    <li><a class="dropdown-item" id="sair" href="#">Sair<i class="bi bi-box-arrow-left"></i></a></li>
+                </ul>
             </li>
-      
+
             <h2>Sustentabilidade e Consciência Ambiental</h2>
-          </ul>
+        </ul>
         <section id='title' class="jumbotron text-center">
             <div class="container">
 
             </div>
         </section>
-        
+
         <div class="album py-5">
             <div class="container">
                 <div class="row">
@@ -201,37 +221,49 @@
                         </div>
                         <div class="card-body">
                             <h3>Lixo eletrônico</h3>
-                             <p>
-                             É o descarte de dispositivos como celulares, computadores e eletrodomésticos, que contêm materiais tóxicos. Seu descarte inadequado pode poluir o solo e a água, além de afetar a saúde humana, causando danos neurológicos e respiratórios.</p>
+                            <p>
+                                É o descarte de dispositivos como celulares, computadores e eletrodomésticos, que contêm
+                                materiais tóxicos. Seu descarte inadequado pode poluir o solo e a água, além de afetar a
+                                saúde humana, causando danos neurológicos e respiratórios.</p>
 
                             <p>
-                            O crescimento do lixo eletrônico é acelerado pelo avanço tecnológico, com estimativas de 50 milhões de toneladas geradas anualmente. A reciclagem é essencial para recuperar metais valiosos e evitar danos ambientais. Conscientização e regulamentações são necessárias para um descarte responsável.</p>
-                            
-                            <p> Alternativas sustentáveis incluem aumentar a durabilidade dos produtos e promover a reutilização. Empresas como a Sete Ambiental oferecem soluções de reciclagem adequadas, contribuindo para a economia circular e a preservação ambiental.</p>
+                                O crescimento do lixo eletrônico é acelerado pelo avanço tecnológico, com estimativas de
+                                50 milhões de toneladas geradas anualmente. A reciclagem é essencial para recuperar
+                                metais valiosos e evitar danos ambientais. Conscientização e regulamentações são
+                                necessárias para um descarte responsável.</p>
+
+                            <p> Alternativas sustentáveis incluem aumentar a durabilidade dos produtos e promover a
+                                reutilização. Empresas como a Sete Ambiental oferecem soluções de reciclagem adequadas,
+                                contribuindo para a economia circular e a preservação ambiental.</p>
 
                         </div>
-                        <div id="infos" >
-                            <button id="buttonLike" onclick="like()"><i id="iconLike" class="fas fa-thumbs-up" ></i></button>
+                        <div id="infos">
+                            <button id="buttonLike" onclick="like()"><i id="iconLike"
+                                    class="fas fa-thumbs-up"></i></button>
                             <span id="like">0</span>
                             <small class="">Last updated 3 mins ago</small>
-                            <small class=""><p>Para mais informações sobre os impactos ambientais do lixo eletrônico, veja o artigo da <a href="https://www.seteambiental.com.br/lixo-eletronico-impacto-ambiental-e-solucoes-sustentaveis/" target="_blank">Sete Ambiental</a>.</p>
+                            <small class="">
+                                <p>Para mais informações sobre os impactos ambientais do lixo eletrônico, veja o artigo
+                                    da <a
+                                        href="https://www.seteambiental.com.br/lixo-eletronico-impacto-ambiental-e-solucoes-sustentaveis/"
+                                        target="_blank">Sete Ambiental</a>.</p>
                             </small>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div vw class="enabled">
             <div vw-access-button class="active"></div>
             <div vw-plugin-wrapper>
-              <div class="vw-plugin-top-wrapper"></div>
+                <div class="vw-plugin-top-wrapper"></div>
             </div>
-          </div>
-          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-          <script>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
             new window.VLibras.Widget('https://vlibras.gov.br/app');
-          </script>
+        </script>
     </main>
 
 </body>

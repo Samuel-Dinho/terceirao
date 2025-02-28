@@ -75,12 +75,17 @@
     }
 
     #main {
-      background-color: #81c78462;
-      background-image: url("../image/pexels-gabby-k-7412043.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+    background-color: #81c78462;
+    background-image: url("../image/pexels-gabby-k-7412043.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  /* Faz a imagem preencher toda a tela */
+    background-position: center;
+    width: 100vw;  /* Faz a largura cobrir toda a tela */
+    height: 100vh; /* Faz a altura cobrir toda a tela */
+    align-items: center;
+    justify-content: center;
+}
+
 
     .container p {
       text-align: justify;
@@ -208,6 +213,8 @@
       font-size: 20px;
       margin: 10px auto;
     }
+
+
   </style>
   <main id="main" role="main">
 
