@@ -28,7 +28,17 @@ Primeiro, clone este repositório para o seu computador:
 
 git clone https://github.com/Samuel-Dinho/terceirao.git
 
+### 2. Após clonar o repositório 
+	
+	acesse o diretório do projeto
+	
+### 3. Abrir o Arquivo HTML no Navegador
 
+	 basta abrir o arquivo index.html diretamente em um navegador da sua preferência.
+	 
+4. Dependências
+Este projeto usa CDN (Content Delivery Network) para carregar o Bootstrap e outras bibliotecas, portanto, não há necessidade de instalar pacotes adicionais. 
+Apenas garanta que o computador esteja conectado à internet para carregar os recursos externos.
 
 Bibliotecas Utilizadas
 Bootstrap: Framework front-end para o desenvolvimento de sites responsivos e rápidos.
