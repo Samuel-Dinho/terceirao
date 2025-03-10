@@ -26,7 +26,7 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 Primeiro, clone este repositório para o seu computador:
 
-git clone https://github.com/Samuel-Dinho/terceirao.git
+	git clone https://github.com/Samuel-Dinho/terceirao.git
 
 ### 2. Após clonar o repositório 
 	
