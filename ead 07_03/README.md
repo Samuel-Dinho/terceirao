@@ -36,7 +36,9 @@ Primeiro, clone este repositório para o seu computador:
 
 	 basta abrir o arquivo index.html diretamente em um navegador da sua preferência.
 	 
-4. Dependências
+	 
+### 4. Dependências
+
 Este projeto usa CDN (Content Delivery Network) para carregar o Bootstrap e outras bibliotecas, portanto, não há necessidade de instalar pacotes adicionais. 
 Apenas garanta que o computador esteja conectado à internet para carregar os recursos externos.
 
@@ -44,16 +46,16 @@ Bibliotecas Utilizadas
 Bootstrap: Framework front-end para o desenvolvimento de sites responsivos e rápidos.
 
 Versão utilizada: 4.5.2
-CDN: https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+CDN: 	https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
 jQuery: Biblioteca JavaScript que facilita a manipulação de DOM e interações com a página.
 
 Versão utilizada: 3.5.1
-CDN: https://code.jquery.com/jquery-3.5.1.slim.min.js
+CDN: 	https://code.jquery.com/jquery-3.5.1.slim.min.js
 Popper.js: Biblioteca para posicionamento de pop-ups e tooltips (necessária para o funcionamento de alguns componentes do Bootstrap).
 
 Versão utilizada: 2.9.1
-CDN: https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js
+CDN: 	https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js
 Font Awesome (opcional): Para ícones utilizados em alguns componentes (se necessário).
 
 Versão utilizada: 5.13.0
-CDN: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
+CDN: 	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
