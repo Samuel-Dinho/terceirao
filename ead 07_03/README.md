@@ -26,5 +26,24 @@ Siga os passos abaixo para rodar o projeto localmente:
 
 Primeiro, clone este repositório para o seu computador:
 
-```bash
 git clone https://github.com/Samuel-Dinho/terceirao.git
+
+
+
+Bibliotecas Utilizadas
+Bootstrap: Framework front-end para o desenvolvimento de sites responsivos e rápidos.
+
+Versão utilizada: 4.5.2
+CDN: https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+jQuery: Biblioteca JavaScript que facilita a manipulação de DOM e interações com a página.
+
+Versão utilizada: 3.5.1
+CDN: https://code.jquery.com/jquery-3.5.1.slim.min.js
+Popper.js: Biblioteca para posicionamento de pop-ups e tooltips (necessária para o funcionamento de alguns componentes do Bootstrap).
+
+Versão utilizada: 2.9.1
+CDN: https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js
+Font Awesome (opcional): Para ícones utilizados em alguns componentes (se necessário).
+
+Versão utilizada: 5.13.0
+CDN: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css
