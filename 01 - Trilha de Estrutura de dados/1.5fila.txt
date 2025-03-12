@@ -1,0 +1,35 @@
+function enqueue(value):
+	queue.append(value)
+function dequeue():
+	if queue is not empty:
+		return queue.pop(0)
+	else:
+		return None // Fila vazia
+
+
+function Circular(value):
+	if queue is full
+		queue.pop(0)
+	else 
+	   queue.append(value)
+	end if
+end	
+	
+	   
+function fila(numero)
+	fila.append(numero)
+end
+
+function atender(numero)
+	for atender in length(fila)
+		if atender == numero
+			fila.pop(atender)
+		end if
+	end loop
+end
+
+
+
+
+	
+		

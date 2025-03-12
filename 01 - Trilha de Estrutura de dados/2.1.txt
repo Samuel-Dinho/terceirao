@@ -1,0 +1,11 @@
+function fatorial (n)
+	if n == 1 then
+		return 1
+	else
+		return n * fatorial(n-1)
+	end if
+
+end 
+
+
+A complexidade de tempo é O(1)
