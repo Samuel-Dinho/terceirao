@@ -1,0 +1,56 @@
+# 📋 Sistema de Cadastro de Usuário
+
+Este é um projeto de uma página web para **Cadastro de Usuários**, com sidebar responsiva e interativa. Foi desenvolvido com foco em organização, responsividade e uma interface amigável para o usuário.
+
+---
+
+## 🚀 Funcionalidades
+
+- Cadastro completo de informações pessoais e profissionais.
+- Campos de contato, redes sociais e dados bancários.
+- Sidebar fixa com navegação lateral, responsiva para dispositivos móveis.
+- Botão **toggle** para abrir/fechar a sidebar.
+- Máscaras aplicadas em campos específicos como CPF, CNPJ, Telefone, etc.
+- Layout responsivo adaptado para diferentes tamanhos de tela.
+- Estilo limpo, moderno e intuitivo.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (vanilla)**
+- **JQuery**
+- [jQuery Mask Plugin](https://igorescobar.github.io/jQuery-Mask-Plugin/)
+- [Font Awesome Icons](https://fontawesome.com/)
+
+---
+
+## 📱 Responsividade
+
+A página foi construída com Media Queries para funcionar corretamente em:
+
+- Telas grandes (desktops)
+- Tablets
+- Dispositivos móveis (smartphones)
+
+O menu lateral (sidebar) pode ser ocultado em telas menores, utilizando o botão de toggle.
+
+---
+
+## 🎨 Estrutura Geral
+
+- **Sidebar lateral fixa** com links para navegação.
+- **Formulário dividido em cards**: informações pessoais, profissionais, contato, redes sociais e dados bancários.
+- **Cabeçalho fixo e rodapé fixo**.
+- Botões estilizados para salvar ou limpar o formulário.
+
+---
+
+## 💻 Como utilizar
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/Samuel-Dinho/terceirao.git
