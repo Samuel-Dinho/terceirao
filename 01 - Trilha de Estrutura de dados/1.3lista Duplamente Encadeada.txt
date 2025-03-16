@@ -1,0 +1,38 @@
+function inseriNoComeco(self,data)
+	new_node = Node(data)
+	if self.head is None:
+            self.head = new_node
+        else:
+            new_node.next = self.head
+            self.head.prev = new_node
+            self.head = new_node
+end
+
+function inseriNoFinal(self,data)
+	new_node = Node(data)
+	if self.head is none
+		self.head = new_node
+	else
+		temp = self.head
+		while temp.next:
+			temp = temp.next
+		temp.next = new_node
+		new_node.prev = temp
+end
+
+
+function deFpTeTpF(self)
+	temp = self.head
+	while temp is null
+            print(temp)
+            temp = temp.next
+	end while
+
+	while temp is null
+	    print(temp)
+	    temp = temp.prev
+	end while
+end
+		
+
+

@@ -1,0 +1,38 @@
+struct Lista
+    head
+end struct
+
+class Node:
+data // Dados do nó
+next // Ponteiro para o próximo nó
+
+class LinkedList:
+head = None // Inicializa a lista vazia
+
+function inserirNoInicio(valor)
+	new = new Node(valor)
+	newNode.next = head
+	head = newNode
+end
+
+function inserirNofinal(valor)
+	new = new Node(valor)
+	if head is None
+		head = newNode
+	else 
+		final = head
+	while final.next is not None
+		final = final.next
+	final.next = newNode
+end
+
+
+
+function percorrePorValor(valor)
+	atual = lista.head
+while atual == valor
+	output(atual.dado)
+end while
+end
+	
+	

@@ -1,0 +1,28 @@
+stack = []
+
+function isEmpty(stack)
+	if stack is null
+	   return true
+	else
+           return false
+end
+
+
+
+function verificaParentese(stack)
+
+	for caractere in stack 
+	if stack == '('
+	  stack.push(stack)
+	else stack = ')'
+	  if isEmpty(stack)
+		return false
+	stack.pop()
+	
+	if isEmpty(stack)
+	  return true
+	else
+	  return false
+end
+
+

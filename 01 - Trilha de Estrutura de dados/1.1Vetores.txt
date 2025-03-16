@@ -1,0 +1,33 @@
+
+numbers = [0,1,2,3,4,5,6,7,8,9]
+function mostraNumeros()
+   loop for i from 0 to length(numbers) -1 
+       output("numero" , numbers[i])
+    end loop
+end
+function buscaNumeros(numero)
+    loop for i from 0 to 11
+        if numbers[i] == numero then 
+            return true;
+        end if 
+    end loop
+end
+
+if buscaNumeros(2) then
+    output "Numero encontrado"    
+else 
+    output "Numero não encontrado"
+end if
+
+function removeNumero(posicao)
+    numbers.pop(posicao);
+end 
+output("Tamanho do array",length(numbers))
+mostraNumeros()
+output("-------------------------------")
+output("Removendo numero")
+removeNumero(2)
+output("-------------------------------")
+output("Mostrando numero")
+mostraNumeros()
+output("Tamanho do array",length(numbers))
