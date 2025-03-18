@@ -1,0 +1,5 @@
+function inOrder(node):
+if node is not None:
+print(node.data) // Visita o nó atual
+inOrder(node.left) // Visita a subárvore esquerda
+inOrder(node.right) // Visita a subárvore direita

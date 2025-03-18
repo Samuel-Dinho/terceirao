@@ -1,0 +1,5 @@
+soma(self, node)
+	if node is None:
+		return 0
+
+	return node.value + self.soma_recusiva(node.next)

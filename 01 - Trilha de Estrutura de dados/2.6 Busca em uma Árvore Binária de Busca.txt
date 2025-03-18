@@ -1,0 +1,14 @@
+function procurar(node,valor):
+	if valor is not None:
+		
+	if valor == node.data
+		return true
+	else if valor < node.data
+		return procurar(node.left,valor)
+	else 
+		return procurar(node.right,valor)
+		
+
+ Qual é a complexidade de tempo da busca em termos de nnn, onde nnn é o
+número de nós na árvore?
+ O(n)
